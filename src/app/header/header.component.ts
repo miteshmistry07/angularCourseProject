@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from "../../../node_modules/@angular/core";
+import { Component } from "../../../node_modules/@angular/core";
 
 
 @Component({
@@ -6,11 +6,5 @@ import { Component, EventEmitter, Output } from "../../../node_modules/@angular/
     templateUrl: './header.component.html'
 })
 export class HeaderComponent {
-
-    @Output() featureSelected = new EventEmitter<string>(); //listen from the parent component
-
-    onSelect(feature:string) {
-        this.featureSelected.emit(feature);
-    }
 
 }
